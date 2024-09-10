@@ -6,6 +6,8 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    persmissions: 
+      contents: read
     steps:
     - name: Setup Node.js
       uses: actions/setup-node@v4
