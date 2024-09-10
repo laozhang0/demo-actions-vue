@@ -6,7 +6,7 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    persmissions: 
+    permissions: 
       contents: read
     steps:
     - name: Setup Node.js
