@@ -6,8 +6,6 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    permissions: 
-      contents: read
     steps:
     - name: Setup Node.js
       uses: actions/setup-node@v4
@@ -22,6 +20,6 @@ jobs:
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        ACCESS_TOKEN: ${{ secrets.ALL }}
         BRANCH: gh-pages
         FOLDER: dist
